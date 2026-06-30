@@ -14,7 +14,7 @@ const tabs: { id: TabId; icon: string; labelKey: string }[] = [
 ];
 
 export default function Navigation({ activeTab, onTabChange }: NavigationProps) {
-  const { t, locale, setLocale } = useI18n();
+  const { t } = useI18n();
 
   return (
     <header className="nav-header">
@@ -41,25 +41,7 @@ export default function Navigation({ activeTab, onTabChange }: NavigationProps) 
             </button>
           ))}
         </nav>
-        <div className="nav-lang">
-          <button
-            className={`nav-lang-btn ${locale === 'en' ? 'active' : ''}`}
-            onClick={() => setLocale('en')}
-            aria-label="English"
-            title="English"
-          >
-            EN
-          </button>
-          <span className="nav-lang-divider" />
-          <button
-            className={`nav-lang-btn ${locale === 'uz' ? 'active' : ''}`}
-            onClick={() => setLocale('uz')}
-            aria-label="O\u2018zbekcha"
-            title="O\u2018zbekcha"
-          >
-            UZ
-          </button>
-        </div>
+
       </div>
     </header>
   );
