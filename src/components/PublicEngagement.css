@@ -1,0 +1,106 @@
+.engagement-page {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 40px 24px;
+  width: 100%;
+}
+
+.engagement-header {
+  margin-bottom: 32px;
+}
+
+.engagement-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  background: linear-gradient(135deg, var(--color-primary), #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.engagement-subtitle {
+  font-size: 1rem;
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  max-width: 640px;
+}
+
+.engagement-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: 20px;
+}
+
+.engagement-card {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: all var(--transition-base);
+}
+
+.engagement-card:hover {
+  border-color: var(--color-border-light);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.engagement-card-top {
+  padding: 16px 20px 0;
+}
+
+.engagement-card-type {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.engagement-card-body {
+  padding: 16px 20px;
+}
+
+.engagement-card-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 4px;
+  color: var(--color-text);
+}
+
+.engagement-card-source {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin-bottom: 2px;
+}
+
+.engagement-card-date {
+  font-size: 0.75rem;
+  color: var(--color-text-dim);
+  font-family: var(--font-mono);
+  margin-bottom: 12px;
+}
+
+.engagement-card-desc {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+}
+
+@media (max-width: 640px) {
+  .engagement-page {
+    padding: 24px 16px;
+  }
+
+  .engagement-list {
+    grid-template-columns: 1fr;
+  }
+
+  .engagement-title {
+    font-size: 1.35rem;
+  }
+}

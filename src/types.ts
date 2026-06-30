@@ -45,6 +45,16 @@ export interface TimelineEvent {
   source?: string;
 }
 
+export interface EngagementItem {
+  id: string;
+  title: string;
+  type: 'podcast' | 'interview';
+  source: string;
+  date: string;
+  url?: string;
+  description: string;
+}
+
 export type TabId = 'graph' | 'library' | 'timeline';
 
 export interface SimNode {

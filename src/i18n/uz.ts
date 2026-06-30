@@ -4,8 +4,9 @@ export const uz = {
     subtitle: '',
     graph: 'Kontsept Grafi',
     library: 'Haqiqat Kutubxonasi',
-    timeline: 'Shaffoflik Xronologiyasi',
-    language: 'Til',
+  timeline: 'Shaffoflik Xronologiyasi',
+  engagement: 'Omma Ishtiroki',
+  language: 'Til',
   },
   graph: {
     legend: {
@@ -61,6 +62,13 @@ export const uz = {
       proposed: 'Taklif etilgan',
       monitoring: 'Monitoring',
     },
+  },
+  engagement: {
+    title: 'Omma Ishtiroki',
+    subtitle:
+      'Hamid Sodiqning boshqaruv, shaffoflik va institutsional islohotlar haqida so\u0308z yuritgan podkastlari, intervyulari va ommaviy chiqishlari.',
+    podcast: 'Podkast',
+    interview: 'Intervyu',
   },
   footer:
     'Hamid Sodiq \u2014 Ochiq Manba \u00b7 Mustaqil \u00b7 Abadiy.',

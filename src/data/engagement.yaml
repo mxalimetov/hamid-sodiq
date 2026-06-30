@@ -1,0 +1,27 @@
+- id: podcast-ep-42
+  title: Davlat Lavozimida Hisobdorlik
+  type: podcast
+  source: The Fourth Estate Podkasti, 4-fasl, 42-qism
+  date: '2023-12-15'
+  description: >
+    Davlat javobgarligi mexanizmlari va fuqarolik jamiyatining shaffoflikni ta'minlashdagi
+    roli haqida chuqur tahlil. Sodiq Gana, Keniya va Indoneziyadagi muvaffaqiyatli
+    javobgarlik harakatlarining amaliy misollarini ko'rib chiqadi.
+
+- id: interview-transparency
+  title: Shaffoflik va Fuqarolik Javobgarligi
+  type: interview
+  source: Osiyo Demokratiya Tarmog'i
+  date: '2024-03-20'
+  description: >
+    Hamid Sodiq bilan shaffoflik mexanizmlari, fuqarolik jamiyati nazorati va
+    Markaziy Osiyoda demokratik islohotlar istiqbollari haqida suhbat.
+
+- id: podcast-ep-45
+  title: Iqtisodiy Erkinlik va Institutsional Islohotlar
+  type: podcast
+  source: Iqtisodiy Sharh Podkasti, 3-fasl, 45-qism
+  date: '2024-06-10'
+  description: >
+    Iqtisodiy erkinlik, institutsional islohotlar va ularning Markaziy Osiyo
+    davlatlarining rivojlanish strategiyalaridagi o'rni haqida tahliliy suhbat.

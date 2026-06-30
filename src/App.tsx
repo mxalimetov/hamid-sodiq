@@ -2,6 +2,7 @@ import Navigation from './components/Navigation';
 import ConceptGraph from './components/ConceptGraph';
 import LibraryGrid from './components/LibraryGrid';
 import Timeline from './components/Timeline';
+import PublicEngagement from './components/PublicEngagement';
 import './App.css';
 
 export default function App() {
@@ -22,6 +23,9 @@ export default function App() {
         </section>
         <section id="section-timeline" className="content-section">
           <Timeline />
+        </section>
+        <section id="section-engagement" className="content-section">
+          <PublicEngagement />
         </section>
       </main>
       <footer className="app-footer">

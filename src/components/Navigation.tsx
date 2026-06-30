@@ -10,6 +10,7 @@ const tabs: { id: string; icon: string; labelKey: string }[] = [
   { id: 'section-graph', icon: '◉', labelKey: 'nav.graph' },
   { id: 'section-library', icon: '◈', labelKey: 'nav.library' },
   { id: 'section-timeline', icon: '⊡', labelKey: 'nav.timeline' },
+  { id: 'section-engagement', icon: '◎', labelKey: 'nav.engagement' },
 ];
 
 export default function Navigation({ onTabChange }: NavigationProps) {

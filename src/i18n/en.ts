@@ -4,8 +4,9 @@ export const en = {
     subtitle: '',
     graph: 'Concept Graph',
     library: 'Truth Library',
-    timeline: 'Transparency Timeline',
-    language: 'Language',
+  timeline: 'Transparency Timeline',
+  engagement: 'Public Engagement',
+  language: 'Language',
   },
   graph: {
     legend: {
@@ -61,6 +62,13 @@ export const en = {
       proposed: 'Proposed',
       monitoring: 'Monitoring',
     },
+  },
+  engagement: {
+    title: 'Public Engagement',
+    subtitle:
+      'Podcasts, interviews, and public appearances where Hamid Sodiq discusses governance, transparency, and institutional reform.',
+    podcast: 'Podcast',
+    interview: 'Interview',
   },
   footer:
     'Hamid Sodiq \u2014 Open Source \u00b7 Independent \u00b7 Forever.',
