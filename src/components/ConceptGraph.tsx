@@ -2,7 +2,7 @@ import { useRef, useState, useEffect, useCallback, useMemo } from 'react';
 import ForceGraph2D from './ForceGraph2D';
 import { conceptGraphData } from '../data/concepts';
 import { useI18n } from '../i18n/context';
-import type { GraphNode, TabId } from '../types';
+import type { GraphNode } from '../types';
 import './ConceptGraph.css';
 
 const TYPE_COLORS: Record<string, string> = {
@@ -32,7 +32,7 @@ function getNodeColor(type: string): string {
 }
 
 interface ConceptGraphProps {
-  onNavigate: (tab: TabId) => void;
+  onNavigate: (sectionId: string) => void;
 }
 
 export default function ConceptGraph({ onNavigate }: ConceptGraphProps) {
@@ -146,12 +146,12 @@ export default function ConceptGraph({ onNavigate }: ConceptGraphProps) {
   const handleNavigateFromNode = useCallback(() => {
     if (!selectedNode) return;
     if (selectedNode.type === 'episode' || selectedNode.type === 'event') {
-      onNavigate('timeline');
+      onNavigate('section-timeline');
     } else if (
       selectedNode.type === 'article' ||
       selectedNode.type === 'document'
     ) {
-      onNavigate('library');
+      onNavigate('section-library');
     }
   }, [selectedNode, onNavigate]);
 

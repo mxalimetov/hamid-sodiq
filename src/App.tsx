@@ -1,25 +1,28 @@
-import { useState, useCallback } from 'react';
 import Navigation from './components/Navigation';
 import ConceptGraph from './components/ConceptGraph';
 import LibraryGrid from './components/LibraryGrid';
 import Timeline from './components/Timeline';
-import type { TabId } from './types';
 import './App.css';
 
 export default function App() {
-  const [activeTab, setActiveTab] = useState<TabId>('graph');
-
-  const handleNavigate = useCallback((tab: TabId) => {
-    setActiveTab(tab);
-  }, []);
+  const handleNavigate = (sectionId: string) => {
+    const el = document.getElementById(sectionId);
+    if (el) el.scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
     <div className="app">
-      <Navigation activeTab={activeTab} onTabChange={setActiveTab} />
+      <Navigation onTabChange={handleNavigate} />
       <main className="main-content">
-        {activeTab === 'graph' && <ConceptGraph onNavigate={handleNavigate} />}
-        {activeTab === 'library' && <LibraryGrid />}
-        {activeTab === 'timeline' && <Timeline />}
+        <section id="section-graph" className="content-section">
+          <ConceptGraph onNavigate={handleNavigate} />
+        </section>
+        <section id="section-library" className="content-section">
+          <LibraryGrid />
+        </section>
+        <section id="section-timeline" className="content-section">
+          <Timeline />
+        </section>
       </main>
       <footer className="app-footer">
         <p>Hamid Sodiq Archive &mdash; Open Source &middot; Independent &middot; Forever.</p>

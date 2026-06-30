@@ -1,20 +1,37 @@
+import { useState, useEffect } from 'react';
 import { useI18n } from '../i18n/context';
-import type { TabId } from '../types';
 import './Navigation.css';
 
 interface NavigationProps {
-  activeTab: TabId;
-  onTabChange: (tab: TabId) => void;
+  onTabChange: (sectionId: string) => void;
 }
 
-const tabs: { id: TabId; icon: string; labelKey: string }[] = [
-  { id: 'graph', icon: '◉', labelKey: 'nav.graph' },
-  { id: 'library', icon: '◈', labelKey: 'nav.library' },
-  { id: 'timeline', icon: '⊡', labelKey: 'nav.timeline' },
+const tabs: { id: string; icon: string; labelKey: string }[] = [
+  { id: 'section-graph', icon: '◉', labelKey: 'nav.graph' },
+  { id: 'section-library', icon: '◈', labelKey: 'nav.library' },
+  { id: 'section-timeline', icon: '⊡', labelKey: 'nav.timeline' },
 ];
 
-export default function Navigation({ activeTab, onTabChange }: NavigationProps) {
+export default function Navigation({ onTabChange }: NavigationProps) {
   const { t } = useI18n();
+  const [activeSection, setActiveSection] = useState('section-graph');
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      entries => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        }
+      },
+      { rootMargin: '-50% 0px -50% 0px' },
+    );
+
+    const sectionIds = tabs.map(t => document.getElementById(t.id)).filter(Boolean);
+    for (const el of sectionIds) observer.observe(el!);
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <header className="nav-header">
@@ -31,9 +48,9 @@ export default function Navigation({ activeTab, onTabChange }: NavigationProps) 
             <button
               key={tab.id}
               role="tab"
-              aria-selected={activeTab === tab.id}
-              aria-controls={`panel-${tab.id}`}
-              className={`nav-tab ${activeTab === tab.id ? 'active' : ''}`}
+              aria-selected={activeSection === tab.id}
+              aria-controls={tab.id}
+              className={`nav-tab ${activeSection === tab.id ? 'active' : ''}`}
               onClick={() => onTabChange(tab.id)}
             >
               <span className="nav-tab-icon">{tab.icon}</span>
@@ -41,7 +58,6 @@ export default function Navigation({ activeTab, onTabChange }: NavigationProps) 
             </button>
           ))}
         </nav>
-
       </div>
     </header>
   );
