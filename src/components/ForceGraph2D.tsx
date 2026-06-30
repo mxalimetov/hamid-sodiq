@@ -71,7 +71,24 @@ const ForceGraph2D = forwardRef<ForceGraph2DHandle, ForceGraph2DProps>((props, r
     if (!el) return;
     const graph = (ForceGraphKapsule as any)()(el);
     compRef.current = graph;
+
+    const charge = graph.d3Force('charge');
+    if (charge) charge.strength(300);
+
+    const link = graph.d3Force('link');
+    if (link) link.distance(200);
+
+    const wheelHandler = (e: WheelEvent) => {
+      if (e.ctrlKey || e.metaKey) {
+        e.preventDefault();
+      } else {
+        e.stopPropagation();
+      }
+    };
+    el.addEventListener('wheel', wheelHandler, { capture: true, passive: false });
+
     return () => {
+      el.removeEventListener('wheel', wheelHandler, { capture: true });
       if (typeof (graph as any)._destructor === 'function') (graph as any)._destructor();
     };
   }, []);
