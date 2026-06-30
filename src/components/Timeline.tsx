@@ -78,16 +78,11 @@ function TimelineEventCard({
             ? t('timeline.statuses.monitoring')
             : null;
 
-  const title =
-    t(`data.timeline.${event.id}.title`) || event.title;
-  const description =
-    t(`data.timeline.${event.id}.description`) || event.description;
-  const analysis =
-    t(`data.timeline.${event.id}.analysis`) || event.analysis;
-  const prediction =
-    t(`data.timeline.${event.id}.prediction`) || event.prediction;
-  const source =
-    t(`data.timeline.${event.id}.source`) || event.source;
+  const title = event.title;
+  const description = event.description;
+  const analysis = event.analysis;
+  const prediction = event.prediction;
+  const source = event.source;
 
   return (
     <div

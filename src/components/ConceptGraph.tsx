@@ -385,8 +385,7 @@ export default function ConceptGraph({ onNavigate }: ConceptGraphProps) {
         if (!p) continue;
         const isHovered = node.id === hoveredRef.current;
         const radius = getNodeRadius(node.type);
-        const label =
-          t(`data.concepts.${node.id}.label`) || node.label;
+        const label = node.label;
         drawLabel(c, label, p.x, p.y, radius, isHovered);
       }
     }
@@ -608,29 +607,23 @@ export default function ConceptGraph({ onNavigate }: ConceptGraphProps) {
             {selectedNodeTypeLabel}
           </div>
 
-          <h2 className="graph-detail-title">
-            {t(`data.concepts.${selectedNode.id}.label`) || selectedNode.label}
-          </h2>
+          <h2 className="graph-detail-title">{selectedNode.label}</h2>
 
-          {(t(`data.concepts.${selectedNode.id}.description`) || selectedNode.description) && (
-            <p className="graph-detail-desc">
-              {t(`data.concepts.${selectedNode.id}.description`) || selectedNode.description}
-            </p>
+          {selectedNode.description && (
+            <p className="graph-detail-desc">{selectedNode.description}</p>
           )}
 
-          {(t(`data.concepts.${selectedNode.id}.details`) || selectedNode.details) && (
+          {selectedNode.details && (
             <div className="graph-detail-section">
               <h4>{t('graph.details')}</h4>
-              <p>{t(`data.concepts.${selectedNode.id}.details`) || selectedNode.details}</p>
+              <p>{selectedNode.details}</p>
             </div>
           )}
 
-          {(t(`data.concepts.${selectedNode.id}.source`) || selectedNode.source) && (
+          {selectedNode.source && (
             <div className="graph-detail-section">
               <h4>{t('graph.source')}</h4>
-              <p className="graph-detail-source">
-                {t(`data.concepts.${selectedNode.id}.source`) || selectedNode.source}
-              </p>
+              <p className="graph-detail-source">{selectedNode.source}</p>
             </div>
           )}
 

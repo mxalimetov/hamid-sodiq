@@ -93,7 +93,7 @@ export default function LibraryGrid() {
               <p className="library-card-author">{book.author}</p>
               <p className="library-card-year">{book.year}</p>
               <p className="library-card-commentary">
-                {t(`data.library.${book.id}.commentary`) || book.commentary}
+                {book.commentary}
               </p>
             </div>
             <div className="library-card-footer">

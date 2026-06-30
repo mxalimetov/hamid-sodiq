@@ -1,0 +1,51 @@
+nodes:
+  - id: civic-accountability
+    label: Fuqarolik Javobgarligi
+    type: concept
+    description: >
+      Davlat institutlaridan shaffoflik, hisobdorlik va huquqiy javobgarlikni talab
+      qiluvchi mexanizmlar va ijtimoiy harakatlar.
+    details: >
+      Fuqarolik javobgarligi demokratiyaning poydevoridir. Bu huquqiy asoslar,
+      fuqarolik jamiyati nazorati, matbuot erkinligi va fuqarolar ishtirokini
+      o'z ichiga oladi.
+    connections:
+      - podcast-ep-42
+      - article-transparency
+
+  - id: podcast-ep-42
+    label: Davlat Lavozimida Hisobdorlik
+    type: episode
+    description: >
+      Davlat javobgarligi mexanizmlari va fuqarolik jamiyatining shaffoflikni
+      ta'minlashdagi roli haqida chuqur tahlil.
+    details: >
+      Ushbu podkastda Sodiq Gana, Keniya va Indoneziyadagi muvaffaqiyatli
+      javobgarlik harakatlarining amaliy misollarini ko'rib chiqadi.
+    source: The Fourth Estate Podkasti, 4-fasl, 42-qism
+    year: 2023
+    connections:
+      - civic-accountability
+
+  - id: article-transparency
+    label: Shaffoflik Paradoksi
+    type: article
+    description: >
+      Nega rasmiy shaffoflik mexanizmlari fuqarolik nazoratisiz ko'pincha
+      muvaffaqiyatsizlikka uchraydi.
+    details: >
+      Afrika Demokratiya Jurnalida chop etilgan ushbu maqolada shaffoflik
+      qonunlari tegishli fuqarolik savodxonligi va majburlash mexanizmlarisiz
+      haqiqiy o'zgarish emas, balki javobgarlik illyuziyasini yaratishi
+      ta'kidlanadi.
+    source: Afrika Demokratiya Jurnali, 14-jild, 3-son
+    year: 2023
+    connections:
+      - civic-accountability
+
+edges:
+  - source: civic-accountability
+    target: podcast-ep-42
+
+  - source: civic-accountability
+    target: article-transparency

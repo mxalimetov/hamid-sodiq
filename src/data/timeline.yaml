@@ -1,0 +1,31 @@
+- id: t-2015-election
+  date: "2015-03-28"
+  title: "Tinch Demokratik O'tish"
+  description: >
+    Nigeriya o'z tarixida birinchi marta ikki siyosiy partiya o'rtasida tinch
+    hokimiyat almashinuviga guvoh bo'ldi. Muhammadu Buxori amaldagi prezident
+    Gudlak Jonatanni mag'lub etdi.
+  type: geopolitical
+  analysis: >
+    Sodiq buni "demokratiyaning eng yaxshi soati" deb ta'riflab, institutsional
+    kuch emas, balki elita konsensusi asosiy omil bo'lganligi haqida ogohlantirdi.
+  prediction: >
+    Sodiq bu o'tish 18 oy ichida yopiladigan islohot oynasini yaratishini
+    bashorat qildi.
+  source: "The Fourth Estate Podkasti, Aprel 2015"
+
+- id: t-2020-endsars
+  date: "2020-10-11"
+  title: "#EndSARS Noroziliklari"
+  description: >
+    Nigeriya yoshlari bir avlod ichidagi eng katta muvofiqlashtirilgan norozilik
+    harakatini olib bordi, SARSni tarqatib yuborish va keng politsiya islohotini
+    talab qildi.
+  type: geopolitical
+  analysis: >
+    Sodiq #EndSARS harakatini Nigeriya fuqarolik faolligida muhim burilish
+    nuqtasi sifatida tahlil qildi.
+  prediction: >
+    U hukumatning mazmunli politsiya islohotini amalga oshira olmasligi g'azab
+    va bostirish davrlariga olib kelishini bashorat qildi.
+  source: "Raqamli Asrda Fuqarolik Barqarorligi, Oktyabr 2020"
