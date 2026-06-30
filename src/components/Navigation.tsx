@@ -11,7 +11,6 @@ const tabs: { id: string; icon: string; labelKey: string }[] = [
   { id: 'library', icon: '◈', labelKey: 'nav.library' },
   { id: 'timeline', icon: '⊡', labelKey: 'nav.timeline' },
   { id: 'engagement', icon: '◎', labelKey: 'nav.engagement' },
-  { id: 'graph', icon: '◉', labelKey: 'nav.graph' },
 ];
 
 const sectionTabs = new Set(['library', 'timeline', 'engagement']);
