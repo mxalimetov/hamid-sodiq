@@ -1,27 +1,39 @@
-- id: podcast-ep-42
-  title: Davlat Lavozimida Hisobdorlik
+- id: gazeta-podcast-1
+  title: Maktablar baxtlilarni tarbiyalashi kerakmi? Nega?
   type: podcast
-  source: The Fourth Estate Podkasti, 4-fasl, 42-qism
-  date: '2023-12-15'
+  source: Gazeta.uz
+  date: '2024-05-15'
   description: >
-    Davlat javobgarligi mexanizmlari va fuqarolik jamiyatining shaffoflikni ta'minlashdagi
-    roli haqida chuqur tahlil. Sodiq Gana, Keniya va Indoneziyadagi muvaffaqiyatli
-    javobgarlik harakatlarining amaliy misollarini ko'rib chiqadi.
+    Ta'limning maqsad va vazifasini o'rganuvchi ta'lim falsafasi haqida batafsil
+    muhokama. Siyosatshunos Hamid Sodiq ta'limdagi avlodlar ziddiyati, tizimning
+    sertifikat qopqoniga tushib qolgani va qadriyatlar masalasini chuqur tahlil qiladi.
 
-- id: interview-transparency
-  title: Shaffoflik va Fuqarolik Javobgarligi
+- id: daryo-podcast-10
+  title: Oqsoq ta'lim haqida ochiqchasiga gaplashamiz
+  type: podcast
+  source: Daryo Media, 10-son
+  date: '2023-11-20'
+  description: >
+    Ta'lim tizimidagi chuqur muammolar, yoshlar tarbiyasi va jamiyatdagi intellektual
+    inqiroz haqida ochiq hamda tanqidiy suhbat. Hamid Sodiq ta'limdagi kamchiliklarning
+    davlat va millat kelajagiga ta'sirini ochib bergan.
+
+- id: olimjon-usarov-interview
+  title: Dunyo katta urush oldida turibdi...
   type: interview
-  source: Osiyo Demokratiya Tarmog'i
-  date: '2024-03-20'
+  source: Olimjon Usarov YouTube kanali
+  date: '2024-05-01'
   description: >
-    Hamid Sodiq bilan shaffoflik mexanizmlari, fuqarolik jamiyati nazorati va
-    Markaziy Osiyoda demokratik islohotlar istiqbollari haqida suhbat.
+    Jahondagi bugungi geosiyosiy vaziyat, liberalizm inqirozi va davlatchilik
+    formulasi haqida qamrovli siyosiy tahlil. Suhbat davomida yangi urushlarning
+    tabiati hamda zamonaviy yoshlar uchun eng katta xavflar haqida so'z boradi.
 
-- id: podcast-ep-45
-  title: Iqtisodiy Erkinlik va Institutsional Islohotlar
+- id: 1000kitob-podcast-2
+  title: Biz bu loyihaga hayot-mamot dasturi sifatida qarashimiz kerak
   type: podcast
-  source: Iqtisodiy Sharh Podkasti, 3-fasl, 45-qism
-  date: '2024-06-10'
+  source: NQE Intervyu (1000KITOB podkasti, 2-son)
+  date: '2024-02-18'
   description: >
-    Iqtisodiy erkinlik, institutsional islohotlar va ularning Markaziy Osiyo
-    davlatlarining rivojlanish strategiyalaridagi o'rni haqida tahliliy suhbat.
+    Iqtisodchi Behzod Hoshimov va Hamid Sodiq ishtirokida kitoblar tarjimasi,
+    iqtisodiy hamda siyosiy yo'nalishlar va o'zbek tilining ijtimoiy nufuzi
+    haqida qilingan dolzarb va analitik suhbat.
