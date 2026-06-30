@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import Navigation from './components/Navigation';
 import ConceptGraph from './components/ConceptGraph';
 import LibraryGrid from './components/LibraryGrid';
@@ -5,19 +6,51 @@ import Timeline from './components/Timeline';
 import PublicEngagement from './components/PublicEngagement';
 import './App.css';
 
+type Page = 'graph' | 'library' | 'timeline' | 'engagement';
+
+function getPageFromHash(): Page {
+  const hash = window.location.hash.slice(1).toLowerCase();
+  if (hash.startsWith('/graph')) return 'graph';
+  if (hash.startsWith('/timeline')) return 'timeline';
+  if (hash.startsWith('/engagement')) return 'engagement';
+  return 'library';
+}
+
 export default function App() {
-  const handleNavigate = (sectionId: string) => {
-    const el = document.getElementById(sectionId);
-    if (el) el.scrollIntoView({ behavior: 'smooth' });
+  const [page, setPage] = useState<Page>(getPageFromHash);
+
+  useEffect(() => {
+    const onHashChange = () => setPage(getPageFromHash());
+    window.addEventListener('hashchange', onHashChange);
+    return () => window.removeEventListener('hashchange', onHashChange);
+  }, []);
+
+  useEffect(() => {
+    if (page === 'graph') return;
+    const id = `section-${page}`;
+    const el = document.getElementById(id);
+    if (el) {
+      setTimeout(() => el.scrollIntoView({ behavior: 'smooth' }), 50);
+    }
+  }, [page]);
+
+  const handleNavigate = (tabId: string) => {
+    window.location.hash = `/${tabId}`;
   };
+
+  if (page === 'graph') {
+    return (
+      <div className="app page-graph">
+        <Navigation onNavigate={handleNavigate} currentPage={page} />
+        <ConceptGraph onNavigate={handleNavigate} />
+      </div>
+    );
+  }
 
   return (
     <div className="app">
-      <Navigation onTabChange={handleNavigate} />
+      <Navigation onNavigate={handleNavigate} currentPage={page} />
       <main className="main-content">
-        <section id="section-graph" className="content-section">
-          <ConceptGraph onNavigate={handleNavigate} />
-        </section>
         <section id="section-library" className="content-section">
           <LibraryGrid />
         </section>

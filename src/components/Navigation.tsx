@@ -3,36 +3,45 @@ import { useI18n } from '../i18n/context';
 import './Navigation.css';
 
 interface NavigationProps {
-  onTabChange: (sectionId: string) => void;
+  onNavigate: (tabId: string) => void;
+  currentPage: string;
 }
 
 const tabs: { id: string; icon: string; labelKey: string }[] = [
-  { id: 'section-graph', icon: '◉', labelKey: 'nav.graph' },
-  { id: 'section-library', icon: '◈', labelKey: 'nav.library' },
-  { id: 'section-timeline', icon: '⊡', labelKey: 'nav.timeline' },
-  { id: 'section-engagement', icon: '◎', labelKey: 'nav.engagement' },
+  { id: 'graph', icon: '◉', labelKey: 'nav.graph' },
+  { id: 'library', icon: '◈', labelKey: 'nav.library' },
+  { id: 'timeline', icon: '⊡', labelKey: 'nav.timeline' },
+  { id: 'engagement', icon: '◎', labelKey: 'nav.engagement' },
 ];
 
-export default function Navigation({ onTabChange }: NavigationProps) {
+const sectionTabs = new Set(['library', 'timeline', 'engagement']);
+
+export default function Navigation({ onNavigate, currentPage }: NavigationProps) {
   const { t } = useI18n();
-  const [activeSection, setActiveSection] = useState('section-graph');
+  const [activeTab, setActiveTab] = useState(currentPage);
 
   useEffect(() => {
+    setActiveTab(currentPage);
+  }, [currentPage]);
+
+  useEffect(() => {
+    if (!sectionTabs.has(currentPage)) return;
+
     const observer = new IntersectionObserver(
       entries => {
         for (const entry of entries) {
           if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
+            setActiveTab(entry.target.id.replace('section-', ''));
           }
         }
       },
       { rootMargin: '-50% 0px -50% 0px' },
     );
 
-    const sectionIds = tabs.map(t => document.getElementById(t.id)).filter(Boolean);
-    for (const el of sectionIds) observer.observe(el!);
+    const ids = Array.from(sectionTabs).map(id => document.getElementById(`section-${id}`)).filter(Boolean);
+    for (const el of ids) observer.observe(el!);
     return () => observer.disconnect();
-  }, []);
+  }, [currentPage]);
 
   return (
     <header className="nav-header">
@@ -49,10 +58,9 @@ export default function Navigation({ onTabChange }: NavigationProps) {
             <button
               key={tab.id}
               role="tab"
-              aria-selected={activeSection === tab.id}
-              aria-controls={tab.id}
-              className={`nav-tab ${activeSection === tab.id ? 'active' : ''}`}
-              onClick={() => onTabChange(tab.id)}
+              aria-selected={activeTab === tab.id}
+              className={`nav-tab ${activeTab === tab.id ? 'active' : ''}`}
+              onClick={() => onNavigate(tab.id)}
             >
               <span className="nav-tab-icon">{tab.icon}</span>
               <span className="nav-tab-label">{t(tab.labelKey)}</span>

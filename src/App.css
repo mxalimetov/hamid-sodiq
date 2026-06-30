@@ -4,6 +4,11 @@
   min-height: 100vh;
 }
 
+.app.page-graph {
+  height: 100vh;
+  overflow: hidden;
+}
+
 .main-content {
   flex: 1;
   display: flex;

@@ -34,7 +34,7 @@ function getNodeColor(type: string): string {
 }
 
 interface ConceptGraphProps {
-  onNavigate: (sectionId: string) => void;
+  onNavigate: (tabId: string) => void;
 }
 
 export default function ConceptGraph({ onNavigate }: ConceptGraphProps) {
@@ -148,12 +148,12 @@ export default function ConceptGraph({ onNavigate }: ConceptGraphProps) {
   const handleNavigateFromNode = useCallback(() => {
     if (!selectedNode) return;
     if (selectedNode.type === 'episode' || selectedNode.type === 'event') {
-      onNavigate('section-timeline');
+      onNavigate('timeline');
     } else if (
       selectedNode.type === 'article' ||
       selectedNode.type === 'document'
     ) {
-      onNavigate('section-library');
+      onNavigate('library');
     }
   }, [selectedNode, onNavigate]);
 
