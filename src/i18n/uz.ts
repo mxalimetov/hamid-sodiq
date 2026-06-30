@@ -6,6 +6,8 @@ export const uz = {
     library: 'Haqiqat Kutubxonasi',
   timeline: 'Shaffoflik Xronologiyasi',
   engagement: 'Ommaviy chiqishlar',
+  about: 'Biz haqimizda',
+  connect: "Bog'lanish",
   language: 'Til',
   },
   graph: {
@@ -75,6 +77,15 @@ export const uz = {
       'Hamid Sodiqning boshqaruv, shaffoflik va institutsional islohotlar haqida so\u0308z yuritgan podkastlari, intervyulari va ommaviy chiqishlari.',
     podcast: 'Podkast',
     interview: 'Intervyu',
+  },
+  about: {
+    title: 'Biz haqimizda',
+    subtitle: 'Tarjimai hol va mutaxassislik sohalari.',
+  },
+  connect: {
+    title: "Bog'lanish",
+    subtitle: "Hamid Sodiqni ijtimoiy tarmoqlarda kuzatib boring.",
+    telegram: 'Telegram',
   },
   footer:
     'Hamid Sodiq \u2014 Ochiq Manba \u00b7 Mustaqil \u00b7 Abadiy.',

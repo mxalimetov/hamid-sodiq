@@ -1,0 +1,65 @@
+.about-page {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 80px 24px 40px;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.about-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 12px;
+}
+
+.about-subtitle {
+  font-size: 1rem;
+  color: var(--color-text-muted);
+  max-width: 640px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.about-body {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.about-biography {
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+  margin-bottom: 32px;
+}
+
+.about-roles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.about-role-tag {
+  display: inline-block;
+  padding: 8px 18px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-primary);
+  background: rgba(245, 158, 11, 0.1);
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  border-radius: var(--radius-xl);
+  line-height: 1.4;
+}
+
+@media (max-width: 640px) {
+  .about-page {
+    padding: 60px 16px 24px;
+  }
+
+  .about-title {
+    font-size: 1.5rem;
+  }
+}

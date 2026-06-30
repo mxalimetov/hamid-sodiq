@@ -61,7 +61,7 @@ export interface MissionItem {
   message: string;
 }
 
-export type TabId = 'graph' | 'library' | 'timeline';
+export type TabId = 'graph' | 'library' | 'timeline' | 'engagement' | 'about' | 'connect';
 
 export interface SimNode {
   id: string;

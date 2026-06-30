@@ -11,9 +11,11 @@ const tabs: { id: string; icon: string; labelKey: string }[] = [
   { id: 'library', icon: '◈', labelKey: 'nav.library' },
   { id: 'timeline', icon: '⊡', labelKey: 'nav.timeline' },
   { id: 'engagement', icon: '◎', labelKey: 'nav.engagement' },
+  { id: 'about', icon: '◉', labelKey: 'nav.about' },
+  { id: 'connect', icon: '✉', labelKey: 'nav.connect' },
 ];
 
-const sectionTabs = new Set(['library', 'timeline', 'engagement']);
+const sectionTabs = new Set(['library', 'timeline', 'engagement', 'about', 'connect']);
 
 export default function Navigation({ onNavigate, currentPage }: NavigationProps) {
   const { t } = useI18n();

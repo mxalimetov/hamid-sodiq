@@ -1,0 +1,102 @@
+.connect-page {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 80px 24px 40px;
+}
+
+.connect-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.connect-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 12px;
+}
+
+.connect-subtitle {
+  font-size: 1rem;
+  color: var(--color-text-muted);
+  max-width: 640px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.connect-links {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.connect-card {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px 24px;
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+  transition: all var(--transition-base);
+  min-width: 280px;
+}
+
+.connect-card:hover {
+  border-color: var(--color-primary-dim);
+  background: var(--color-bg-hover);
+  text-decoration: none;
+}
+
+.connect-card-icon {
+  font-size: 1.5rem;
+  color: var(--color-secondary);
+  flex-shrink: 0;
+}
+
+.connect-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+  min-width: 0;
+}
+
+.connect-card-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.connect-card-handle {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  font-family: var(--font-mono);
+}
+
+.connect-card-arrow {
+  font-size: 1rem;
+  color: var(--color-text-dim);
+  flex-shrink: 0;
+  transition: transform var(--transition-fast);
+}
+
+.connect-card:hover .connect-card-arrow {
+  transform: translate(2px, -2px);
+}
+
+@media (max-width: 640px) {
+  .connect-page {
+    padding: 60px 16px 24px;
+  }
+
+  .connect-title {
+    font-size: 1.5rem;
+  }
+
+  .connect-card {
+    min-width: 0;
+    width: 100%;
+  }
+}

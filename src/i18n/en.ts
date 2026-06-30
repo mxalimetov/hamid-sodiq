@@ -6,6 +6,8 @@ export const en = {
     library: 'Truth Library',
   timeline: 'Transparency Timeline',
   engagement: 'Public Engagement',
+  about: 'About',
+  connect: 'Connect',
   language: 'Language',
   },
   graph: {
@@ -75,6 +77,15 @@ export const en = {
       'Podcasts, interviews, and public appearances where Hamid Sodiq discusses governance, transparency, and institutional reform.',
     podcast: 'Podcast',
     interview: 'Interview',
+  },
+  about: {
+    title: 'About',
+    subtitle: 'Biography and areas of expertise.',
+  },
+  connect: {
+    title: 'Connect',
+    subtitle: 'Follow Hamid Sodiq on social media and messaging platforms.',
+    telegram: 'Telegram',
   },
   footer:
     'Hamid Sodiq \u2014 Open Source \u00b7 Independent \u00b7 Forever.',
