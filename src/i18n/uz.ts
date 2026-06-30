@@ -6,6 +6,7 @@ export const uz = {
     library: 'Haqiqat Kutubxonasi',
   timeline: 'Shaffoflik Xronologiyasi',
   engagement: 'Ommaviy chiqishlar',
+  translations: 'Tarjimalar',
   about: 'Biz haqimizda',
   connect: "Bog'lanish",
   language: 'Til',
@@ -77,6 +78,10 @@ export const uz = {
       'Hamid Sodiqning boshqaruv, shaffoflik va institutsional islohotlar haqida so\u0308z yuritgan podkastlari, intervyulari va ommaviy chiqishlari.',
     podcast: 'Podkast',
     interview: 'Intervyu',
+  },
+  translations: {
+    title: 'Tarjima kitoblar',
+    subtitle: "Hamid Sodiq tomonidan o\u02BBzbek tiliga tarjima qilingan muhim siyosiy va falsafiy asarlar",
   },
   about: {
     title: 'Biz haqimizda',

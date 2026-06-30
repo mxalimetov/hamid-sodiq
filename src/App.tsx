@@ -5,17 +5,19 @@ import MissionUzbekistan from './components/MissionUzbekistan';
 import LibraryGrid from './components/LibraryGrid';
 import Timeline from './components/Timeline';
 import PublicEngagement from './components/PublicEngagement';
+import Translations from './components/Translations';
 import About from './components/About';
 import Connect from './components/Connect';
 import './App.css';
 
-type Page = 'graph' | 'library' | 'timeline' | 'engagement' | 'about' | 'connect';
+type Page = 'graph' | 'library' | 'timeline' | 'engagement' | 'translations' | 'about' | 'connect';
 
 function getPageFromHash(): Page {
   const hash = window.location.hash.slice(1).toLowerCase();
   if (hash.startsWith('/graph')) return 'graph';
   if (hash.startsWith('/timeline')) return 'timeline';
   if (hash.startsWith('/engagement')) return 'engagement';
+  if (hash.startsWith('/translations')) return 'translations';
   if (hash.startsWith('/about')) return 'about';
   if (hash.startsWith('/connect')) return 'connect';
   return 'library';
@@ -67,6 +69,9 @@ export default function App() {
         </section>
         <section id="section-engagement" className="content-section">
           <PublicEngagement />
+        </section>
+        <section id="section-translations" className="content-section">
+          <Translations />
         </section>
         <section id="section-about" className="content-section">
           <About />

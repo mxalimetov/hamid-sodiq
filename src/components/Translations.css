@@ -1,0 +1,92 @@
+.translations-page {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 80px 24px 40px;
+}
+
+.translations-header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.translations-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 12px;
+}
+
+.translations-subtitle {
+  font-size: 1rem;
+  color: var(--color-text-muted);
+  max-width: 640px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.translations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 16px;
+}
+
+.translations-card {
+  display: flex;
+  gap: 16px;
+  padding: 20px 24px;
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  transition: border-color var(--transition-base);
+}
+
+.translations-card:hover {
+  border-color: var(--color-primary-dim);
+}
+
+.translations-card-number {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-primary-dim);
+  font-family: var(--font-mono);
+  line-height: 1;
+  flex-shrink: 0;
+  min-width: 32px;
+}
+
+.translations-card-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.translations-card-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 4px;
+  line-height: 1.3;
+}
+
+.translations-card-author {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  line-height: 1.4;
+}
+
+@media (max-width: 640px) {
+  .translations-page {
+    padding: 60px 16px 24px;
+  }
+
+  .translations-title {
+    font-size: 1.5rem;
+  }
+
+  .translations-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .translations-card {
+    padding: 16px 18px;
+  }
+}

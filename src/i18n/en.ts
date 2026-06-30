@@ -2,13 +2,14 @@ export const en = {
   nav: {
     brand: 'Hamid Sodiq',
     subtitle: '',
-    graph: 'Concept Graph',
-    library: 'Truth Library',
-  timeline: 'Transparency Timeline',
-  engagement: 'Public Engagement',
-  about: 'About',
-  connect: 'Connect',
-  language: 'Language',
+    graph: 'Kontsept Grafi',
+    library: 'Haqiqat Kutubxonasi',
+  timeline: 'Shaffoflik Xronologiyasi',
+  engagement: 'Ommaviy chiqishlar',
+  translations: 'Tarjimalar',
+  about: 'Biz haqimizda',
+  connect: "Bog'lanish",
+  language: 'Til',
   },
   graph: {
     legend: {
@@ -78,9 +79,13 @@ export const en = {
     podcast: 'Podcast',
     interview: 'Interview',
   },
+  translations: {
+    title: 'Tarjima kitoblar',
+    subtitle: "Hamid Sodiq tomonidan o\u02BBzbek tiliga tarjima qilingan muhim siyosiy va falsafiy asarlar",
+  },
   about: {
-    title: 'About',
-    subtitle: 'Biography and areas of expertise.',
+    title: 'Biz haqimizda',
+    subtitle: 'Tarjimai hol va mutaxassislik sohalari.',
   },
   connect: {
     title: 'Connect',
