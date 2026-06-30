@@ -1,28 +1,58 @@
+- id: power-of-the-powerless
+  title: "Kuchsizlar kuchi (The Power of the Powerless)"
+  author: "Vaclav Havel"
+  topic: "Siyosiy Falsafa / Dissidentlik"
+  year: 1978
+  commentary: >
+    Hamid Sodiq ushbu asarni o'zbek tilida keng tahlil qilib, uning 
+    post-sovet hududidagi jamiyatlar uchun muhimligini ta'kidlaydi. 
+    Asar avtoritarizm sharoitida oddiy insonning kundalik itoatkorligi 
+    tizimni qanday ushlab turishini va haqiqatda yashash orqali unga 
+    qanday qarshi turish mumkinligini tushuntiradi.
+  notes: >
+    Asosiy tushuncha: Sabzavot sotuvchisining peshtaxtasiga shior osishi 
+    kabi kichik harakatlar orqali odamlar o'zlari bilmagan holda 
+    yolg'on tizimini qo'llab-quvvatlaydilar. Haqiqatda yashash esa eng katta 
+    siyosiy harakatdir.
+
+- id: vatandoshlik-dasturi
+  title: "Vatandoshlik dasturi"
+  author: "Yulo Vooglayd (Ülo Vooglaid)"
+  topic: "Jamiyat / Siyosat"
+  year: 2023
+  commentary: >
+    Hamid Sodiq tomonidan o'zbek tiliga tarjima qilingan ushbu kitob 
+    inson, hayot, jamiyat, madaniyat va rahbarlik kabi mavzularni o'z 
+    ichiga oladi. U fuqarolik (vatandoshlik) ongini shakllantirish va 
+    post-sovet jamiyatlari uchun muhim qo'llanma sifatida o'zbek o'quvchisiga 
+    taqdim etilgan.
+  notes: >
+    Asosiy tushuncha: Oddiy fuqarodan ongli vatandoshga aylanish jarayoni; 
+    insonning jamiyatdagi o'rni, huquqlari va mas'uliyatlarini chuqur anglash.
+
 - id: why-nations-fail
-  title: "Why Nations Fail: The Origins of Power, Prosperity, and Poverty"
+  title: "Mamlakatlar tanazzuli sabablari (Why Nations Fail)"
   author: "Daron Acemoglu & James A. Robinson"
   topic: "Siyosiy Iqtisodiyot"
   year: 2012
   commentary: >
-    Asemoglu va Robinson Nigeriyaning rivojlanish muvaffaqiyatsizliklarini
-    jiddiy diagnostika qilish uchun zarur bo'lgan analitik vositalarni taqdim
-    etadilar. Ekstraktiv va inklyuziv institutlar o'rtasidagi farq akademik
-    emas — bu Nigeriya boyligicha qolayotganining eng aniq tushuntirishidir.
+    Hamid Sodiq turli platformalarda jamoatchilikka aynan shu asarni mutolaa 
+    qilishni va davlatlarning nega qoloq yoki rivojlanganligini institutsional 
+    nuqtai nazardan tushunishni tavsiya qilgan.
   notes: >
-    Asosiy tushuncha: Ekstraktiv institutlar kuch va boylikni ozchilik qo'lida
-    to'playdi va kuchga ega bo'lganlar o'zgarishga qarshilik ko'rsatadigan
-    ayovsiz doira yaratadi.
+    Asosiy tushuncha: Ekstraktiv institutlar o'rniga inklyuziv institutlarni 
+    qurish jamiyatning uzoq muddatli farovonligi uchun yagona yo'ldir.
 
-- id: development-as-freedom
-  title: "Development as Freedom"
-  author: "Amartya Sen"
-  topic: "Rivojlanish Iqtisodiyoti"
-  year: 1999
+- id: the-narrow-corridor
+  title: "Tor koridor (The Narrow Corridor)"
+  author: "Daron Acemoglu & James A. Robinson"
+  topic: "Siyosatshunoslik"
+  year: 2019
   commentary: >
-    Senning qobiliyat yondashuvi taraqqiyotni YaIM o'sishi emas, balki insoniy
-    erkinliklarning kengayishi sifatida qayta belgilaydi. Bu falsafiy siljish
-    Nigeriya rivojlanishi haqidagi har qanday mazmunli muloqot uchun zarurdir.
+    Erkinlik haqidagi ushbu asar ham Hamid Sodiqning o'qish va tahlil 
+    qilish tavsiyalari ro'yxatidan joy olgan. U erkinlikni tayyor holat 
+    emas, balki doimiy kurash talab qiladigan jarayon ekanligini uqtiradi.
   notes: >
-    Sen beshta instrumental erkinlikni aniqlaydi: siyosiy erkinliklar, iqtisodiy
-    imkoniyatlar, ijtimoiy imkoniyatlar, shaffoflik kafolatlari va himoya
-    xavfsizligi.
+    Asosiy tushuncha: Davlatning kuchi va jamiyatning nazorati o'rtasidagi 
+    doimiy kurash erkinlik yuzaga keladigan tor koridorni yaratadi va bu 
+    muvozanatni doimiy himoya qilish kerak.

@@ -13,9 +13,8 @@ export default function BookModal({ book, onClose }: BookModalProps) {
   const modalRef = useRef<HTMLDivElement>(null);
   const previousFocusRef = useRef<HTMLElement | null>(null);
 
-  const commentary =
-    t(`data.library.${book.id}.commentary`) || book.commentary;
-  const notes = t(`data.library.${book.id}.notes`) || book.notes;
+  const commentary = book.commentary;
+  const notes = book.notes;
 
   useEffect(() => {
     previousFocusRef.current = document.activeElement as HTMLElement;
