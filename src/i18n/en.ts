@@ -1,7 +1,7 @@
 export const en = {
   nav: {
     brand: 'Hamid Sodiq',
-    subtitle: 'Archive',
+    subtitle: '',
     graph: 'Concept Graph',
     library: 'Truth Library',
     timeline: 'Transparency Timeline',
@@ -63,5 +63,5 @@ export const en = {
     },
   },
   footer:
-    'Hamid Sodiq Archive \u2014 Open Source \u00b7 Independent \u00b7 Forever.',
+    'Hamid Sodiq \u2014 Open Source \u00b7 Independent \u00b7 Forever.',
 };

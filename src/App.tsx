@@ -25,7 +25,7 @@ export default function App() {
         </section>
       </main>
       <footer className="app-footer">
-        <p>Hamid Sodiq Archive &mdash; Open Source &middot; Independent &middot; Forever.</p>
+        <p>Hamid Sodiq &mdash; Open Source &middot; Independent &middot; Forever.</p>
       </footer>
     </div>
   );

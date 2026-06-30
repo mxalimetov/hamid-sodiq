@@ -1,7 +1,7 @@
 export const uz = {
   nav: {
     brand: 'Hamid Sodiq',
-    subtitle: 'Arxiv',
+    subtitle: '',
     graph: 'Kontsept Grafi',
     library: 'Haqiqat Kutubxonasi',
     timeline: 'Shaffoflik Xronologiyasi',
@@ -63,5 +63,5 @@ export const uz = {
     },
   },
   footer:
-    'Hamid Sodiq Arxivlari \u2014 Ochiq Manba \u00b7 Mustaqil \u00b7 Abadiy.',
+    'Hamid Sodiq \u2014 Ochiq Manba \u00b7 Mustaqil \u00b7 Abadiy.',
 };
