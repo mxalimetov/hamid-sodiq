@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import Navigation from './components/Navigation';
 import ConceptGraph from './components/ConceptGraph';
+import MissionUzbekistan from './components/MissionUzbekistan';
 import LibraryGrid from './components/LibraryGrid';
 import Timeline from './components/Timeline';
 import PublicEngagement from './components/PublicEngagement';
@@ -26,7 +27,7 @@ export default function App() {
   }, []);
 
   useEffect(() => {
-    if (page === 'graph') return;
+    if (page === 'graph' || page === 'library') return;
     const id = `section-${page}`;
     const el = document.getElementById(id);
     if (el) {
@@ -51,6 +52,9 @@ export default function App() {
     <div className="app">
       <Navigation onNavigate={handleNavigate} currentPage={page} />
       <main className="main-content">
+        <section id="section-mission" className="content-section">
+          <MissionUzbekistan />
+        </section>
         <section id="section-library" className="content-section">
           <LibraryGrid />
         </section>

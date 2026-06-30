@@ -28,6 +28,12 @@ export const uz = {
     navigateTo: '{tab} ichida ochish \u2192',
     conceptsExpanded: '{count} ta kontsept ochildi',
   },
+  mission: {
+    title: 'Missiya va O\'zbekistonga Murojaat',
+    subtitle: 'Milliy tiklanish uchun tahlil, targ\'ibot va tasavvurni boshqaruvchi asosiy tamoyillar.',
+    missionLabel: 'Missiya',
+    messageLabel: 'Murojaat',
+  },
   library: {
     title: 'Haqiqat Kutubxonasi',
     subtitle:

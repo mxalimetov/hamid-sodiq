@@ -28,6 +28,12 @@ export const en = {
     navigateTo: 'Open in {tab} →',
     conceptsExpanded: '{count} concept{plural} expanded',
   },
+  mission: {
+    title: 'Mission & Message to Uzbekistan',
+    subtitle: 'Foundational pillars guiding analysis, advocacy, and vision for national renewal.',
+    missionLabel: 'Mission',
+    messageLabel: 'Message',
+  },
   library: {
     title: 'The Generation of Truth Library',
     subtitle:

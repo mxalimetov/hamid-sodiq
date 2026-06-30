@@ -55,6 +55,12 @@ export interface EngagementItem {
   description: string;
 }
 
+export interface MissionItem {
+  theme: string;
+  mission: string;
+  message: string;
+}
+
 export type TabId = 'graph' | 'library' | 'timeline';
 
 export interface SimNode {
