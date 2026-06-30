@@ -8,15 +8,15 @@ interface NavigationProps {
 }
 
 const tabs: { id: string; icon: string; labelKey: string }[] = [
+  { id: 'mission', icon: '◇', labelKey: 'nav.mission' },
   { id: 'library', icon: '◈', labelKey: 'nav.library' },
-  { id: 'timeline', icon: '⊡', labelKey: 'nav.timeline' },
   { id: 'engagement', icon: '◎', labelKey: 'nav.engagement' },
   { id: 'translations', icon: '📖', labelKey: 'nav.translations' },
   { id: 'about', icon: '◉', labelKey: 'nav.about' },
   { id: 'connect', icon: '✉', labelKey: 'nav.connect' },
 ];
 
-const sectionTabs = new Set(['library', 'timeline', 'engagement', 'translations', 'about', 'connect']);
+const sectionTabs = new Set(['mission', 'library', 'timeline', 'engagement', 'translations', 'about', 'connect']);
 
 export default function Navigation({ onNavigate, currentPage }: NavigationProps) {
   const { t } = useI18n();

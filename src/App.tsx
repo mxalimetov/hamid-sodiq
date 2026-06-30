@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Navigation from './components/Navigation';
 import ConceptGraph from './components/ConceptGraph';
 import MissionUzbekistan from './components/MissionUzbekistan';
@@ -10,11 +10,12 @@ import About from './components/About';
 import Connect from './components/Connect';
 import './App.css';
 
-type Page = 'graph' | 'library' | 'timeline' | 'engagement' | 'translations' | 'about' | 'connect';
+type Page = 'graph' | 'mission' | 'library' | 'timeline' | 'engagement' | 'translations' | 'about' | 'connect';
 
 function getPageFromHash(): Page {
   const hash = window.location.hash.slice(1).toLowerCase();
   if (hash.startsWith('/graph')) return 'graph';
+  if (hash.startsWith('/mission')) return 'mission';
   if (hash.startsWith('/timeline')) return 'timeline';
   if (hash.startsWith('/engagement')) return 'engagement';
   if (hash.startsWith('/translations')) return 'translations';
@@ -32,8 +33,14 @@ export default function App() {
     return () => window.removeEventListener('hashchange', onHashChange);
   }, []);
 
+  const initialLoad = useRef(true);
+
   useEffect(() => {
-    if (page === 'graph' || page === 'library') return;
+    if (initialLoad.current) {
+      initialLoad.current = false;
+      return;
+    }
+    if (page === 'graph') return;
     const id = `section-${page}`;
     const el = document.getElementById(id);
     if (el) {

@@ -3,6 +3,7 @@ export const uz = {
     brand: 'Hamid Sodiq',
     subtitle: '',
     graph: 'Kontsept Grafi',
+    mission: 'Missiya',
     library: 'Haqiqat Kutubxonasi',
   timeline: 'Shaffoflik Xronologiyasi',
   engagement: 'Ommaviy chiqishlar',
