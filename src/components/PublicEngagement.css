@@ -91,6 +91,46 @@
   color: var(--color-text-secondary);
 }
 
+.engagement-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.engagement-card--linked {
+  cursor: pointer;
+}
+
+.engagement-card--linked:hover .engagement-card-play {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.engagement-card-thumb {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: var(--color-bg-card);
+}
+
+.engagement-card-thumb-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.engagement-card-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  opacity: 0.9;
+  transition: all 0.2s ease;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.6));
+}
+
 @media (max-width: 640px) {
   .engagement-page {
     padding: 24px 16px;

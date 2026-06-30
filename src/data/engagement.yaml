@@ -3,6 +3,7 @@
   type: podcast
   source: Gazeta.uz
   date: '2024-05-15'
+  url: 'https://www.youtube.com/watch?v=GfDWLJw0BWU'
   description: >
     Ta'limning maqsad va vazifasini o'rganuvchi ta'lim falsafasi haqida batafsil
     muhokama. Siyosatshunos Hamid Sodiq ta'limdagi avlodlar ziddiyati, tizimning
@@ -13,6 +14,7 @@
   type: podcast
   source: Daryo Media, 10-son
   date: '2023-11-20'
+  url: 'https://www.youtube.com/watch?v=gjj6nBNCE3w'
   description: >
     Ta'lim tizimidagi chuqur muammolar, yoshlar tarbiyasi va jamiyatdagi intellektual
     inqiroz haqida ochiq hamda tanqidiy suhbat. Hamid Sodiq ta'limdagi kamchiliklarning
@@ -23,6 +25,7 @@
   type: interview
   source: Olimjon Usarov YouTube kanali
   date: '2024-05-01'
+  url: 'https://www.youtube.com/watch?v=CRc3q_M_hEc'
   description: >
     Jahondagi bugungi geosiyosiy vaziyat, liberalizm inqirozi va davlatchilik
     formulasi haqida qamrovli siyosiy tahlil. Suhbat davomida yangi urushlarning
@@ -33,7 +36,51 @@
   type: podcast
   source: NQE Intervyu (1000KITOB podkasti, 2-son)
   date: '2024-02-18'
+  url: 'https://www.youtube.com/watch?v=dPs4G8Mmwy8'
   description: >
     Iqtisodchi Behzod Hoshimov va Hamid Sodiq ishtirokida kitoblar tarjimasi,
     iqtisodiy hamda siyosiy yo'nalishlar va o'zbek tilining ijtimoiy nufuzi
     haqida qilingan dolzarb va analitik suhbat.
+
+- id: azam-kunduziy-podcast
+  title: Dunyo, dinlar, xalqlar va siyosat qanday ishlaydi?
+  type: podcast
+  source: Azam Qahramoniy, Kunduziy
+  date: '2025-09-01'
+  url: 'https://www.youtube.com/watch?v=AzgFeNzNJiI'
+  description: >
+    Dunyo tartibi, xalqlar o'rtasidagi munosabatlar va dinlarning siyosatga ta'siri haqida
+    keng qamrovli suhbat. Hamid Sodiq jamiyatlarning rivojlanish bosqichlarini tahlil qiladi.
+
+- id: parda-podcast-feminizm
+  title: O'zbek jamiyatida Feminizm
+  type: podcast
+  source: Parda Podcast
+  date: '2025-02-20'
+  url: 'https://www.youtube.com/watch?v=cGHeuF0nbL8'
+  description: >
+    O'zbek jamiyatida xotin-qizlar huquqlari, an'analar va zamonaviylik ziddiyatlari, hamda
+    feminizmning jamiyat rivojidagi o'rni va unga nisbatan noto'g'ri qarashlar haqida
+    chuqur muhokama.
+
+- id: ibook-uz-interview
+  title: Qo'rquv insonni qanday sindiradi?
+  type: interview
+  source: iBooK uz
+  date: '2026-06-28'
+  url: 'https://www.youtube.com/watch?v=0efGyc2zq_g'
+  description: >
+    Inson psixologiyasida qo'rquvning o'rni, totalitar tuzumlarning jamiyatni boshqarishda
+    qo'rquvdan qanday foydalanishi va erkinlikka erishishdagi to'siqlar tahlil qilingan
+    intervyu.
+
+- id: ilk-qadam-podcast
+  title: Kelajak avlod hayotning mohiyatini topolmayapti
+  type: podcast
+  source: Ilk Qadam
+  date: '2026-06-23'
+  url: 'https://www.youtube.com/watch?v=WAVplc8-G3E'
+  description: >
+    Zamonaviy yoshlarning hayotdagi maqsadlari, ma'nosizlik hissi va ma'naviy bo'shliq
+    muammolari haqida. Hamid Sodiq yoshlar tarbiyasi va ularning kelajakdagi o'rni
+    haqida so'z yuritadi.
