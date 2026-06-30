@@ -5,7 +5,7 @@ export const uz = {
     graph: 'Kontsept Grafi',
     library: 'Haqiqat Kutubxonasi',
   timeline: 'Shaffoflik Xronologiyasi',
-  engagement: 'Omma Ishtiroki',
+  engagement: 'Ommaviy chiqishlar',
   language: 'Til',
   },
   graph: {
@@ -64,7 +64,7 @@ export const uz = {
     },
   },
   engagement: {
-    title: 'Omma Ishtiroki',
+    title: 'Ommaviy chiqishlar',
     subtitle:
       'Hamid Sodiqning boshqaruv, shaffoflik va institutsional islohotlar haqida so\u0308z yuritgan podkastlari, intervyulari va ommaviy chiqishlari.',
     podcast: 'Podkast',
