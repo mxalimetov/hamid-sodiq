@@ -1,8 +1,10 @@
 import { useMemo, useState, useRef, useEffect } from 'react';
-import { timelineData } from '../data/timeline';
+import _timelineData from '../data/timeline.yaml';
 import { useI18n } from '../i18n/context';
 import type { TimelineEvent } from '../types';
 import './Timeline.css';
+
+const timelineData = _timelineData as unknown as TimelineEvent[];
 
 const TYPE_CONFIG: Record<string, { key: string; color: string }> = {
   geopolitical: { key: 'timeline.types.geopolitical', color: '#ef4444' },

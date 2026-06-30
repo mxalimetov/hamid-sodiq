@@ -1,6 +1,9 @@
-import { engagementData } from '../data/engagement';
+import _engagementData from '../data/engagement.yaml';
 import { useI18n } from '../i18n/context';
+import type { EngagementItem } from '../types';
 import './PublicEngagement.css';
+
+const engagementData = _engagementData as unknown as EngagementItem[];
 
 const TYPE_CONFIG: Record<string, { labelKey: string; color: string }> = {
   podcast: { labelKey: 'engagement.podcast', color: '#3b82f6' },

@@ -1,9 +1,11 @@
 import { useState, useMemo } from 'react';
-import { libraryData } from '../data/library';
+import _libraryData from '../data/library.yaml';
 import { useI18n } from '../i18n/context';
 import BookModal from './BookModal';
 import type { LibraryItem } from '../types';
 import './LibraryGrid.css';
+
+const libraryData = _libraryData as unknown as LibraryItem[];
 
 const TOPIC_COLORS: Record<string, string> = {
   'Political Economy': '#f59e0b',

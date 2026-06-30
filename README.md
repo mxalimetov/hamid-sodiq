@@ -1,8 +1,7 @@
 
 # TODO
-
-- public engagement (podcasts, interviews) section
-- make data proper yaml
+- add mission and message to uzb section to the front
+- create bot to crawl data from youtube, telegram, internet.
 - connect section
 - contribution section
 - add ask question from tranied gpt

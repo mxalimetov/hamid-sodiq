@@ -1,9 +1,11 @@
 import { useRef, useState, useEffect, useCallback, useMemo } from 'react';
 import ForceGraph2D from './ForceGraph2D';
-import { conceptGraphData } from '../data/concepts';
+import _conceptGraphData from '../data/concepts.yaml';
 import { useI18n } from '../i18n/context';
-import type { GraphNode } from '../types';
+import type { GraphNode, GraphData } from '../types';
 import './ConceptGraph.css';
+
+const conceptGraphData = _conceptGraphData as unknown as GraphData;
 
 const TYPE_COLORS: Record<string, string> = {
   concept: '#f59e0b',
