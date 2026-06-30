@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "watch": "vite build --watch",
-    "preview": "vite preview"
+    "preview": "npm run build && wrangler dev",
+    "deploy": "npm run build && wrangler deploy"
   },
   "dependencies": {
     "force-graph": "^1.51.4",
@@ -16,11 +17,13 @@
     "react-kapsule": "^2.6.0"
   },
   "devDependencies": {
+    "@cloudflare/vite-plugin": "^1.42.4",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^4.3.4",
     "typescript": "^5.6.3",
     "unplugin-yaml": "^4.0.1",
-    "vite": "^6.0.0"
+    "vite": "^6.0.0",
+    "wrangler": "^4.106.0"
   }
 }
